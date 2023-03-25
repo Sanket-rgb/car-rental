@@ -1,0 +1,68 @@
+.book-car-box {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0rem 1.5rem;
+  padding: 40px 45px;
+
+  background-color: #fff;
+  background-image: url(/Images/background/bookBackground.png);
+  background-size: cover;
+
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.book-car-box h2 {
+  margin-bottom: 27px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+
+  margin-bottom: 1rem;
+}
+
+.form-grid > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-grid > button {
+  align-self: flex-end;
+  padding: 1em;
+
+  background-color: #ff4d30;
+  border: none;
+  border-radius: 0;
+
+  box-shadow: 0 10px 15px rgba(255, 83, 48, 0.35);
+  color: #fff;
+
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.form-grid > button:hover {
+  box-shadow: 0 10px 15px rgba(255, 83, 48, 0.55);
+}
+
+.grid-cell > label {
+  margin-bottom: 12px;
+}
+
+.grid-cell select,
+.grid-cell input {
+  border: 1px solid #ccd7e6;
+  border-radius: 3px;
+  color: #ababab;
+
+  font-weight: 400;
+
+  padding: 12px 13px;
+
+  outline: none;
+}

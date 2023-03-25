@@ -1,0 +1,31 @@
+.banner-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #2d2d2d;
+  color: white;
+
+  padding: 3rem 0rem;
+  margin: 4rem 0rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto !important;
+  max-width: 133rem !important;
+  padding: 0 2.5rem !important;
+
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.container h2 {
+  font-size: 52px;
+}
+
+.container p {
+  font-size: 24px;
+}

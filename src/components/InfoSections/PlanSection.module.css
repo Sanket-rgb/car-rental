@@ -1,0 +1,54 @@
+.plan-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  margin: 0rem 1.5rem;
+}
+
+.plan-section__heading {
+  text-align: center;
+}
+
+.plan-section__heading h3 {
+  font-size: 23px;
+}
+
+.plan-section__heading h2 {
+  font-size: 42px;
+  margin: 13px 0px 30px;
+}
+
+.plan-section__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  margin: 37px 0px 0px;
+  padding: 0px 30px;
+}
+
+.plan-section__container-box {
+  padding: 10px 60px;
+
+  place-self: start;
+  text-align: center;
+}
+
+.plan-section__container-box h3 {
+  font-size: 24px;
+
+  margin: 0px 0px 10px;
+}
+
+.plan-section__container-box p {
+  color: #706f7b;
+  line-height: 1.43;
+}
+.image-container {
+  position: relative;
+
+  width: 170px;
+  height: 170px;
+}

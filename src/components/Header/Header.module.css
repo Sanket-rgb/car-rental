@@ -65,3 +65,25 @@
 .navbar-buttons-layout a:hover {
   color: #ff4d30;
 }
+
+.hamburger-menu {
+  display: none;
+  position: relative;
+
+  height: 24.5px;
+  width: 28px;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar-buttons-layout {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}

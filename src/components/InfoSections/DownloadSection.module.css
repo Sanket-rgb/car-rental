@@ -1,0 +1,65 @@
+.download-section {
+  padding: 100px 0px;
+  height: auto;
+  /* margin-top: 4rem; */
+
+  background-image: url(/Images/background/download.png);
+  background-color: #f8f8f8;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  padding: 0px 25px;
+}
+.download-text h2 {
+  font-size: 42px;
+}
+
+.download-text p {
+  color: #706f7b;
+}
+.download-text {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 27.5rem;
+  gap: 2rem;
+
+  text-align: left;
+}
+
+.download-text__buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.image-container {
+  position: relative;
+
+  width: 220px;
+  height: 66px;
+}
+
+@media screen and (max-width: 700px) {
+  .download-section {
+    background-image: none;
+  }
+
+  .container {
+    justify-content: center;
+  }
+
+  .download-text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .download-text__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -66,3 +66,15 @@
 
   outline: none;
 }
+
+@media screen and (max-width: 1000px) {
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -8,22 +8,25 @@
 }
 
 .hero-content__text {
-  width: 50%;
+  /* width: 50%; */
   z-index: 2;
 }
 
 .hero-content__text h4 {
-  font-size: 1.7rem;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .hero-content__text h1 {
-  font-size: 3.5rem;
+  font-size: 52px;
+  font-weight: 700;
 
   margin: 10px 0px 23px;
 }
 
 .hero-content__text p {
-  font-size: 1rem;
+  color: #706f7b;
+  font-size: 16px;
   margin-bottom: 40px;
   width: 60%;
 }
@@ -34,6 +37,7 @@
 }
 
 .button {
+  font-size: 16px;
   cursor: pointer;
   font-family: Rubik, sans-serif;
   font-weight: 700;
@@ -41,7 +45,7 @@
   border-radius: 3px;
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
   color: #fff;
-  padding: 22px 47px;
+  padding: 18px 30px;
   transition: all 0.3s;
 }
 
@@ -72,4 +76,44 @@
   object-fit: contain;
   /* overflow: visible; */
   z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    justify-content: center;
+  }
+  .hero-content__car-image {
+    display: none;
+  }
+
+  .hero-content__text {
+    max-width: 30rem;
+    text-align: center;
+  }
+
+  .hero-content__text p {
+    width: 100%;
+  }
+
+  .hero-content__buttons {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero-content__buttons {
+    flex-direction: column;
+    align-items: center;
+
+    /* width: max-content; */
+
+    transition: all 0.3s;
+  }
+
+  .button {
+    width: 268px;
+    height: 59px;
+
+    padding: 18px 80px;
+  }
 }

@@ -1,0 +1,124 @@
+.footer {
+  padding: 100px 0px;
+}
+
+.container {
+  padding: 0px 25px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 27fr 21fr 21fr 21fr;
+
+  text-align: left;
+
+  gap: 4rem;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content__1 li:first-child {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-content__1 li:first-child span {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-content__1 li:nth-child(2) {
+  color: #706f7b;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.footer-content__1 li:nth-child(3),
+.footer-content__1 li:nth-child(4) {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.footer-content__1 li:last-child {
+  font-size: 14px;
+}
+
+.footer-content__1 li a {
+  color: #010103;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.footer-content__2 li:first-child {
+  cursor: auto;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer-content__2 li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-content__2 a {
+  color: #010103;
+  text-decoration: none;
+  transition: all 0.2s;
+
+  font-size: 14px;
+}
+
+.footer-content__2 input {
+  background-color: #ececec;
+  border-color: transparent;
+  border-width: 1px;
+  font-family: Rubik, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 10px;
+  outline: none;
+  padding: 10px 60px;
+  width: 100%;
+  text-align: center;
+}
+
+.submit-email {
+  background-color: #ff4d30;
+  border: 2px solid #ff4d30;
+  border-radius: 0.3rem;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.25);
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 15px 25px;
+  text-decoration: none;
+  transition: all 0.3s;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+  .footer-content ul {
+    text-align: center;
+  }
+}

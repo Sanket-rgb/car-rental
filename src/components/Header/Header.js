@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Button from "../UI/Button";
 import classes from "./Header.module.css";
 
@@ -6,35 +7,42 @@ const Header = () => {
   return (
     <div className={classes.header}>
       <div className={classes["image-container"]}>
-        <Image fill alt="logo" src="/Images/logo.png" />
+        <Image
+          className={classes.image}
+          fill
+          alt="logo"
+          src="/Images/logo.png"
+        />
       </div>
       <nav className={classes["navbar__links"]}>
         <ul>
           <li>
-            <a>Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a>About</a>
+            <Link href="/About">About</Link>
           </li>
           <li>
-            <a>Vehicle Models</a>
+            <Link href="/">Vehicle Models</Link>
           </li>
           <li>
-            <a>Testimonials</a>
+            <Link href="/">Testimonials</Link>
           </li>
           <li>
-            <a>Our Team</a>
+            <Link href="/">Our Team</Link>
           </li>
           <li>
-            <a>Contact</a>
+            <Link href="/">Contact</Link>
           </li>
         </ul>
       </nav>
       <div className={classes["navbar-buttons-layout"]}>
         <a>Sign In</a>
-        <a>
-          <Button className={classes.button}>Register</Button>
-        </a>
+
+        <Button className={classes.button}>Register</Button>
+      </div>
+      <div className={classes["hamburger-menu"]}>
+        <Image fill alt="menu" src="/Images/SVG/menu.svg"></Image>
       </div>
     </div>
   );

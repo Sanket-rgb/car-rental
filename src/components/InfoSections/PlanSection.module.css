@@ -4,12 +4,14 @@
   justify-content: center;
   align-items: center;
 
-  height: 100vh;
+  /* height: 100vh; */
+  padding: 53px 0px;
   margin: 0rem 1.5rem;
 }
 
 .plan-section__heading {
   text-align: center;
+  margin: 0px auto;
 }
 
 .plan-section__heading h3 {
@@ -30,9 +32,12 @@
 }
 
 .plan-section__container-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   padding: 10px 60px;
 
-  place-self: start;
   text-align: center;
 }
 
@@ -51,4 +56,16 @@
 
   width: 170px;
   height: 170px;
+}
+
+@media screen and (max-width: 1022px) {
+  .plan-section__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .plan-section__container {
+    grid-template-columns: 1fr;
+  }
 }

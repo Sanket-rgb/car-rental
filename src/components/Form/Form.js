@@ -7,7 +7,7 @@ const Form = () => {
       <h2>Book a car</h2>
       <form className={classes["form-grid"]}>
         <div className={classes["grid-cell"]}>
-          <label for="car-type">Select Your Car Type *</label>
+          <label htmlFor="car-type">Select Your Car Type *</label>
           <select id="car-type">
             <option value="">Select your car type</option>
             <option value="Audi A1 S-Line">Audi A1 S-Line</option>
@@ -19,7 +19,7 @@ const Form = () => {
           </select>
         </div>
         <div className={classes["grid-cell"]}>
-          <label for="car-pickup-location">Pick-up *</label>
+          <label htmlFor="car-pickup-location">Pick-up *</label>
           <select id="car-pickup-location">
             <option value="">Select pickup location</option>
             <option value="Belgrade">Belgrade</option>
@@ -30,7 +30,7 @@ const Form = () => {
           </select>
         </div>
         <div className={classes["grid-cell"]}>
-          <label for="car-drop-off-location">Drop-off *</label>
+          <label htmlFor="car-drop-off-location">Drop-off *</label>
           <select id="car-drop-off-location">
             <option value="">Select drop-off location</option>
             <option value="Novi Sad">Novi Sad</option>
@@ -41,11 +41,11 @@ const Form = () => {
           </select>
         </div>
         <div className={classes["grid-cell"]}>
-          <label for="car-pickup-date">Pick-off *</label>
+          <label htmlFor="car-pickup-date">Pick-off *</label>
           <input id="car-pickup-date" type="date" />
         </div>
         <div className={classes["grid-cell"]}>
-          <label for="car-drop-off-date">Drop-off *</label>
+          <label htmlFor="car-drop-off-date">Drop-off *</label>
           <input id="car-drop-off-date" type="date" />
         </div>
         <Button>Search</Button>

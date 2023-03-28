@@ -43,7 +43,7 @@ const TestimonialSection = () => {
                 <h4>Parry Potter</h4>
                 <p>Belgrade</p>
               </div>
-              <p>Image</p>
+              {/* <p>Image</p> */}
             </div>
           </div>
           <div className={classes["testimonial-container__testimonials-box"]}>
@@ -75,7 +75,7 @@ const TestimonialSection = () => {
                 <h4>Ron Rizzly</h4>
                 <p>Novi Sad</p>
               </div>
-              <p>Image</p>
+              {/* <p>Image</p> */}
             </div>
           </div>
         </div>

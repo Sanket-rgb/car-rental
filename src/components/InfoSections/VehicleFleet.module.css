@@ -4,6 +4,7 @@
   align-items: center;
 
   /* height: 100vh; */
+  padding: 100px 0px;
   margin: 0rem 1.5rem;
 }
 
@@ -66,12 +67,12 @@
   background-color: #ff4d30;
   color: #fff;
 }
-/* .vehicle-fleet__car-image-details {
-  display: flex;
-  justify-content: space-between;
 
-  width: 100%;
-} */
+.vehicle-fleet__car-list .active {
+  background-color: #ff4d30;
+  color: #fff;
+}
+
 .vehicle-fleet__car-image {
   position: relative;
 
@@ -80,6 +81,7 @@
 }
 
 .vehicle-fleet__car-details {
+  justify-self: flex-end;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -89,7 +91,7 @@
 
 .vehicle-fleet__car-details-price {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   padding: 3px 19px;
@@ -105,7 +107,6 @@
   flex-direction: column;
 
   border-right: 2px solid #706f7b;
-  /* border-top: 2px solid #706f7b; */
 
   font-size: 14px;
 }
@@ -123,8 +124,14 @@
 }
 
 .vehicle-fleet__car-details-description-grid span {
-  /* width: 100%; */
   place-self: center;
+}
+
+.vehicle-fleet__car-details-description-grid span:first-child {
+  width: 100%;
+  border-right: 2px solid #706f7b;
+  /* place-self: center; */
+  text-align: center;
 }
 
 /* .vehicle-fleet__car-details-description-grid span:first-child {

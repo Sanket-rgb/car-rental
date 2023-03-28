@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Button from "../UI/Button";
 
 import classes from "./ChooseSection.module.css";
@@ -26,7 +27,9 @@ const ChooseSection = () => {
               ultimate renting experience, so don{"'"}t miss out on your chance
               to save big.
             </p>
-            <Button>Find Details</Button>
+            <Link style={{ textDecoration: "none" }} href="/">
+              <Button>Find Details</Button>
+            </Link>
           </div>
 
           <div className={classes["text-container__right"]}>

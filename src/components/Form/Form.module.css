@@ -13,6 +13,20 @@
   border-radius: 5px;
 }
 
+.error-message {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #f8d7da;
+
+  border: 1px solid transparent;
+  border-radius: 0.4rem;
+
+  font-weight: 600;
+
+  padding: 10px 14px;
+  margin-bottom: 18px;
+}
 .book-car-box h2 {
   margin-bottom: 27px;
 }

@@ -14,8 +14,8 @@
 
 .choose-container > .image-container {
   position: relative;
-  height: 60%;
-  width: 90%;
+  height: 60vh;
+  width: 100%;
 }
 
 .image {
@@ -54,6 +54,7 @@
 }
 
 .text-container__left Button {
+  cursor: pointer;
   padding: 15px 25px;
   background-color: #ff4d30;
   border: 2px solid #ff4d30;
@@ -65,6 +66,14 @@
   transition: all 0.3s;
 
   width: max-content;
+}
+
+.text-container__left Button:hover {
+  background-color: #fa4226;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
+}
+.text-container__left Link {
+  text-decoration: none;
 }
 
 .text-container__right {
@@ -111,5 +120,11 @@
   }
   .text-container__right {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .choose-container > .image-container {
+    height: 40vh;
   }
 }
